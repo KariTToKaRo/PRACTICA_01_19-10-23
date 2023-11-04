@@ -3,11 +3,13 @@
      src: url("../fonts/HelveticaNeueBold.ttf");
 }
 
-<<<<<<< Updated upstream
+/*<<<<<<< Updated upstream*/
 @font-face {
      font-family: 'HelveticaNeueRegular';
      src: url("../fonts/HelveticaNeueRegular.ttf");
 }
+
+
 
 
 body {
@@ -213,26 +215,61 @@ body {
      }
 }
 
-/*kfrsfs*/
 
-=======
-.btn{
-    color:black;
-    text-align:left;
+     .splitHeader {
+          width: 0%;
+          height: .5em;
+     }
 
+     #searchBar, #shoppingUtil {
+          order: 1;
+          margin-right: 2em
+     }
+
+     #searchBar {
+          flex-grow: 4;
+     }
+
+     #menu>ul {
+          padding: 0;
+     }
+
+     #mainContent {
+          padding: 0em 30em 0em 30em;
+     }
+
+     footer {
+          max-width: 100%;
+          overflow: hidden;
+     }
+
+     #footerMain {
+          display: flex;
+          flex-direction: row;
+          flex-wrap:nowrap;
+          justify-content: space-between;
+          max-width: 100%;
+          
+     }
+          
+     #footerMain>* {
+          width: 12%;
+          border: red 1px solid;
+     }
+
+     #footerLogo {
+          flex-grow: 1;
+          max-width: 45%;
+     }
+     
+     #legal {
+          padding-top: 1em;
+          width: 35%;
+     }
+     
+     .splitFooter {
+          display: none;
+     }
 }
-hr{
-    margin: 0rem;
-}
 
-@media (min-width: 768px){
-
-    .col-md-4{
-        flex: 0 0 auto;
-        width: 33.33333333%;
-        margin: 0;
-        padding:0;
-    }
-
-}
->>>>>>> Stashed changes
+/* af4360b (Header Footer 1)*/
