@@ -1,0 +1,13 @@
+.container botones > {
+    display: flex !important;
+    justify-content: space-around;
+}
+
+.btn{
+    color:black;
+    text-align:left;
+
+}
+hr{
+    margin: 0rem;
+}
