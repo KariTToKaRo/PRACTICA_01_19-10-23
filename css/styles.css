@@ -235,7 +235,7 @@ body {
      }
 
      #mainContent {
-          padding: 0em 30em 0em 30em;
+          padding: 0 20vw 0 20vw;
      }
 
      footer {
@@ -254,7 +254,6 @@ body {
           
      #footerMain>* {
           width: 12%;
-          border: red 1px solid;
      }
 
      #footerLogo {
@@ -270,6 +269,6 @@ body {
      .splitFooter {
           display: none;
      }
-}
+
 
 /* af4360b (Header Footer 1)*/
