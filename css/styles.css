@@ -1,158 +1,97 @@
+@font-face {
+     font-family: 'HelveticaNeueBold';
+     src: url("../fonts/HelveticaNeueBold.ttf");
+}
+
+@font-face {
+     font-family: 'HelveticaNeueRegular';
+     src: url("../fonts/HelveticaNeueRegular.ttf");
+}
+
+
+body {
+     background-color: lightgray;
+}
+
 .container{
     color: aquamarine;
 }
 
-body {
-     margin: 0px;
-     border: 0px;
-     padding: 0px;
-     background-color: #7D7D7D;
-     min-height: 100vh;
+* {
+     font-family: HelveticaNeueRegular;
 }
 
-header {
-     background-color: #FFFFFF;
-     width: 100%;
+#faceMask {
+     height: 100vh;
+     background-image: url("../img/FaceMask.png");
+     background-repeat: no-repeat;
+     background-size: 160vh;
+     background-position: -225px -10vh;
 }
 
-header>p {
-     display: block;
-     background-color: #1E1E1E;
-     color: #FFFFFF;
-     text-align: center;
-     margin-top: 0px;
-     margin-bottom: 0px;
-     padding: .5em;
+#faceText {
+     width: 70vw;
+     padding: 1.5em 0 0 1em;
 }
 
-#headerFlex {
-     display: flex;
-     padding: .5em;
-     flex-wrap: wrap;
-     justify-content: space-between;
-     align-items: center;
-}
-
-#headerLogo {
-     display: block;
-     padding-right: 1em;
-     width: 5em;
-     height: 100%;
-     object-fit: cover;
-}
-
-#searchBar {
-     border: 2px solid black ;
-     border-radius: 25px;
-     flex-grow: 1;
-     display: flex;
-     align-items: center;
-}
-
-#searchBar>p {
-     flex-grow: 1;
-     margin: 5px;
-     margin-left: 1em;
-}
-
-.splitHeader {
-     width: 100%;
-     height: .5em;
-}
-
-#menu {
-     width: auto;
-     order: 0;
-     flex-grow: 1;
-     height: 1.5em;
-}
-
-#menu>ul {
-     display: flex;
-     justify-content: flex-start;
+#faceText>h1 {
      margin: 0;
-     align-items: center;
+     font-family: HelveticaNeueBold;
+     font-size: 1.75em;
 }
 
-#menu>ul>li {
-     list-style: none;
-     display: inline;
-     flex-grow: 1;
+#faceText>p {
+     margin: 0;
+     font-size: 11px;
 }
 
-#menu>ul>li>a {
-     text-decoration: none;
-     color: #000000;
+#galeriaProductos>*>* { 
+     margin: 0;
 }
 
-#mainContent {
-     padding: 0em 10vw 0em 10vw;
+#galeriaProductos {
+     margin: 1em;
+     width: 200px;
+     position: absolute;
+     bottom: -5em;            /* ?? */
 }
 
-footer {
-     background-color: #FFFFFF;
-     width: 100%;
-     padding: 0;
-     padding-top: 1em;
+.producto {
+     display: none;
 }
 
-#footerMain {
+.producto, .productoPrincipal {
      display: flex;
      flex-direction: column;
-     flex-wrap: wrap;
-     max-height: 75vw;
 }
 
-#footerMain>div>ul>li, #footerMain>div>ul>ul>li {
-     list-style: none;
-     display: block;
-}
-
-#footerMain>div>ul, #footerMain>div>ul>ul {
-     padding: 0;
-}
-
-#footerMain>* {
-     width: 45%;
-     padding-left: 1em;
-}
-
-#skinRoutine>ul>ul {
-     display: flex;
-     flex-wrap: wrap;
-     justify-content: flex-start;
-}
-
-#skinRoutine>ul>ul>li {
-     width: 50%;
-}
-
-#legal {
-     padding-top: 1em;
-     width: 100%;
-}
-
-#legal>* {
-     margin: 0;
-     padding: .5em 0em .5em 1em;
-}
-
-#legal>ul {
-     list-style: none;
-     padding: 0 0 0 1em;
+.producto>div, .productoPrincipal>div {
      display: flex;
      flex-direction: row;
-     flex-wrap: wrap;
-     justify-content: center;
+     justify-content: space-between;
 }
 
-#legal>ul>li {
+.producto>div>p, .productoPrincipal>div>p {
      flex-grow: 1;
-     text-decoration: underline;
 }
 
-.splitFooter {
-     height: 100%;
+.producto>div>*, .productoPrincipal>div>* {
+     margin: 0;
+}
+
+.tituloProducto {
+     font-family: HelveticaNeueBold;
+}
+
+#serum {
+     height: 30vh;
+     background-color: #FFFFFF;
+}
+
+#serum>h1 {
+     margin: 0;
+     font-family: HelveticaNeueBold;
+     text-align: center;
 }
 
 @media (min-width: 576px) { 
@@ -166,57 +105,5 @@ footer {
 
 
 @media (min-width: 992px) { 
-     .splitHeader {
-          width: 0%;
-          height: .5em;
-     }
-
-     #searchBar, #shoppingUtil {
-          order: 1;
-          margin-right: 2em
-     }
-
-     #searchBar {
-          flex-grow: 4;
-     }
-
-     #menu>ul {
-          padding: 0;
-     }
-
-     #mainContent {
-          padding: 0 20vw 0 20vw;
-     }
-
-     footer {
-          max-width: 100%;
-          overflow: hidden;
-     }
-
-     #footerMain {
-          display: flex;
-          flex-direction: row;
-          flex-wrap:nowrap;
-          justify-content: space-between;
-          max-width: 100%;
-          
-     }
-          
-     #footerMain>* {
-          width: 12%;
-     }
-
-     #footerLogo {
-          flex-grow: 1;
-          max-width: 45%;
-     }
      
-     #legal {
-          padding-top: 1em;
-          width: 35%;
-     }
-     
-     .splitFooter {
-          display: none;
-     }
 }
