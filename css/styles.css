@@ -56,13 +56,13 @@ body {
      bottom: -5em;            /* ?? */
 }
 
-.producto {
-     display: none;
-}
-
 .producto, .productoPrincipal {
      display: flex;
      flex-direction: column;
+}
+
+.producto {
+     display: none;
 }
 
 .producto>div, .productoPrincipal>div {
@@ -83,6 +83,10 @@ body {
      font-family: HelveticaNeueBold;
 }
 
+.precio {
+     font-family: HelveticaNeueBold;
+}
+
 #serum {
      height: 30vh;
      background-color: #FFFFFF;
@@ -92,6 +96,35 @@ body {
      margin: 0;
      font-family: HelveticaNeueBold;
      text-align: center;
+     position: relative;
+     font-size: 3em;
+     left: -50px;
+     display: block;
+     white-space: nowrap;
+     text-overflow: clip;
+}
+
+#productoSecundario {
+     margin: 1em;
+     width: 120px;
+     position: absolute;
+     top: 835px;
+}
+
+#productoSecundario>.productoPrincipal>.precio {
+     position: relative;
+     top: -1em;
+     left: -1em;
+     margin: 0;
+}
+
+#productoSecundario>.productoPrincipal>.descripcion {
+     position: relative;
+     top: -9.5em;
+     left: 13em;
+     margin: 0;
+     width: 40vw;
+     font-size: 12px;
 }
 
 @media (min-width: 576px) { 
@@ -105,5 +138,76 @@ body {
 
 
 @media (min-width: 992px) { 
+     #faceMask {
+          background-size: 115vw;
+          background-position: -225px -40vh;
+     }
      
+     #faceText {
+          font-size: 1.8em;
+          width: 23vw;
+          padding: 40vh 0 0 2em;
+     }
+     
+     #faceText>p {
+          font-size: .7em;
+     }
+     
+     #galeriaProductos {
+          margin: 1em;
+          width: 200px;
+          display: flex;
+          position: absolute;
+          top: 5em;
+          right: 0vw;
+          width: 50vw;
+          height: 60vh;
+          margin: 0;
+          flex-direction: row;
+          flex-wrap: wrap;
+          justify-content: right;
+     }
+     
+     .producto, .productoPrincipal {
+          display: flex;
+          flex-direction: column;
+          width: 12vw;
+          height: 20vh;
+          padding: 2em 5em 0 0;
+     }
+     
+     #serum {
+          height: 75vh;
+          background-color: #FFFFFF;
+          overflow: hidden;
+     }
+
+     #serum>h1 {
+          text-align: justify;
+          font-size: 17em;
+     }
+     
+     /**/
+     #productoSecundario {
+
+          width: 100%;
+          position: relative;
+          top: -25vh;
+     }
+
+     #productoSecundario>.productoPrincipal {
+          width: 25vw;
+          padding-left: 37.5vw;
+     }
+
+     #productoSecundario>.productoPrincipal>.precio {
+          font-size: 5em;
+     }
+     
+     #productoSecundario>.productoPrincipal>.descripcion {
+          top: -8em;
+          left: 19em;
+          width: 25vw;
+          font-size: 2.2em;
+     }
 }

@@ -223,8 +223,7 @@ footer {
           flex-direction: row;
           flex-wrap:nowrap;
           justify-content: space-between;
-          max-width: 100%;
-          
+          max-width: 100%;          
      }
           
      #footerMain>* {
