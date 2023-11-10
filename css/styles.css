@@ -1,26 +1,216 @@
-.container botones > {
-    display: flex !important;
-    justify-content: space-around;
+@font-face {
+     font-family: 'HelveticaNeueBold';
+     src: url("../fonts/HelveticaNeueBold.ttf");
 }
 
-.btn{
-    color:black;
-    text-align:left;
-
-}
-hr{
-    margin: 0rem;
+@font-face {
+     font-family: 'HelveticaNeueRegular';
+     src: url("../fonts/HelveticaNeueRegular.ttf");
 }
 
-@media (min-width: 768px){
 
-    .col-md-4{
-        flex: 0 0 auto;
-        width: 33.33333333%;
-        margin: 0;
-        padding-left:  0;
-    }
-
+body {
+     background-color: lightgray;
 }
 
+.container{
+    color: aquamarine;
+}
+
+* {
+     font-family: HelveticaNeueRegular;
+}
+
+#faceMask {
+     height: 100vh;
+     background-image: url("../img/FaceMask.png");
+     background-repeat: no-repeat;
+     background-size: 160vh;
+     background-position: -225px -10vh;
+}
+
+#faceText {
+     width: 70vw;
+     padding: 1.5em 0 0 1em;
+}
+
+#faceText>h1 {
+     margin: 0;
+     font-family: HelveticaNeueBold;
+     font-size: 1.75em;
+}
+
+#faceText>p {
+     margin: 0;
+     font-size: 11px;
+}
+
+#galeriaProductos>*>* { 
+     margin: 0;
+}
+
+#galeriaProductos {
+     margin: 1em;
+     width: 200px;
+     position: absolute;
+     bottom: -5em;            /* ?? */
+}
+
+.producto, .productoPrincipal {
+     display: flex;
+     flex-direction: column;
+}
+
+.producto {
+     display: none;
+}
+
+.producto>div, .productoPrincipal>div {
+     display: flex;
+     flex-direction: row;
+     justify-content: space-between;
+}
+
+.producto>div>p, .productoPrincipal>div>p {
+     flex-grow: 1;
+}
+
+.producto>div>*, .productoPrincipal>div>* {
+     margin: 0;
+}
+
+.tituloProducto {
+     font-family: HelveticaNeueBold;
+}
+
+.precio {
+     font-family: HelveticaNeueBold;
+}
+
+#serum {
+     height: 30vh;
+     background-color: #FFFFFF;
+}
+
+#serum>h1 {
+     margin: 0;
+     font-family: HelveticaNeueBold;
+     text-align: center;
+     position: relative;
+     font-size: 3em;
+     left: -50px;
+     display: block;
+     white-space: nowrap;
+     text-overflow: clip;
+}
+
+#productoSecundario {
+     margin: 1em;
+     width: 120px;
+     position: absolute;
+     top: 835px;
+}
+
+#productoSecundario>.productoPrincipal>.precio {
+     position: relative;
+     top: -1em;
+     left: -1em;
+     margin: 0;
+}
+
+#productoSecundario>.productoPrincipal>.descripcion {
+     position: relative;
+     top: -9.5em;
+     left: 13em;
+     margin: 0;
+     width: 40vw;
+     font-size: 12px;
+}
+
+@media (min-width: 576px) { 
+
+     }
+
+
+@media (min-width: 768px) {
+
+      }
+
+
+@media (min-width: 992px) { 
+     #faceMask {
+          background-size: 115vw;
+          background-position: -225px -40vh;
+     }
+     
+     #faceText {
+          font-size: 1.8em;
+          width: 23vw;
+          padding: 40vh 0 0 2em;
+     }
+     
+     #faceText>p {
+          font-size: .7em;
+     }
+     
+     #galeriaProductos {
+          margin: 1em;
+          width: 200px;
+          display: flex;
+          position: absolute;
+          top: 5em;
+          right: 0vw;
+          width: 50vw;
+          height: 60vh;
+          margin: 0;
+          flex-direction: row;
+          flex-wrap: wrap;
+          justify-content: right;
+     }
+     
+     .producto, .productoPrincipal {
+          display: flex;
+          flex-direction: column;
+          width: 12vw;
+          height: 20vh;
+          padding: 2em 5em 0 0;
+     }
+     
+     #serum {
+          height: 75vh;
+          background-color: #FFFFFF;
+          overflow: hidden;
+     }
+
+     #serum>h1 {
+          text-align: justify;
+          font-size: 17em;
+     }
+     
+     /**/
+     #productoSecundario {
+
+          width: 100%;
+          position: relative;
+          top: -25vh;
+     }
+
+     #productoSecundario>.productoPrincipal {
+          width: 25vw;
+          padding-left: 37.5vw;
+     }
+
+     #productoSecundario>.productoPrincipal>.precio {
+          font-size: 5em;
+     }
+     
+     #productoSecundario>.productoPrincipal>.descripcion {
+          top: -8em;
+          left: 19em;
+          width: 25vw;
+          font-size: 2.2em;
+     }
+}
+
+/*kfrsfs*/
 
