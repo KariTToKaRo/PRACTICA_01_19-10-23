@@ -9,8 +9,22 @@
      src: url("../fonts/HelveticaNeueRegular.ttf");
 }
 
+* {
+     font-family: HelveticaNeueRegular;
+}
 
+#faceMask {
+     height: 100vh;
+     background-image: url("../img/FaceMask.png");
+     background-repeat: no-repeat;
+     background-size: 160vh;
+     background-position: -225px -10vh;
+}
 
+#faceText {
+     width: 70vw;
+     padding: 1.5em 0 0 1em;
+}
 
 body {
      background-color: lightgray;
