@@ -3,6 +3,7 @@
      src: url("../fonts/HelveticaNeueBold.ttf");
 }
 
+<<<<<<< Updated upstream
 @font-face {
      font-family: 'HelveticaNeueRegular';
      src: url("../fonts/HelveticaNeueRegular.ttf");
@@ -214,3 +215,24 @@ body {
 
 /*kfrsfs*/
 
+=======
+.btn{
+    color:black;
+    text-align:left;
+
+}
+hr{
+    margin: 0rem;
+}
+
+@media (min-width: 768px){
+
+    .col-md-4{
+        flex: 0 0 auto;
+        width: 33.33333333%;
+        margin: 0;
+        padding:0;
+    }
+
+}
+>>>>>>> Stashed changes
