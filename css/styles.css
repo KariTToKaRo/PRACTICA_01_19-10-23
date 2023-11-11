@@ -13,6 +13,11 @@
      font-family: HelveticaNeueRegular;
 }
 
+
+
+
+/*HOME*/
+
 #faceMask {
      height: 100vh;
      background-image: url("../img/FaceMask.png");
@@ -252,6 +257,13 @@ body {
           padding: 0 20vw 0 20vw;
      }
 
+
+
+
+
+
+
+
      footer {
           max-width: 100%;
           overflow: hidden;
@@ -286,3 +298,52 @@ body {
 
 
 /* af4360b (Header Footer 1)*/
+
+
+
+
+/*PRODUCTO*/
+
+.fotopr {
+     position: -webkit-sticky;
+     position: sticky;
+     top: 5em; 
+     bottom: 5em;/* Ajusta la distancia desde la parte superior según tus preferencias */
+     padding: 4em;
+ }
+
+ .infopr {
+     margin-left: 20px; /* Ajusta el margen izquierdo para evitar que el contenido se superponga con la imagen fija */
+ }
+
+.nombrepr{
+     color: black;
+}
+
+.botones{
+     display: flex;
+     justify-content:space-between; 
+}
+
+.btn-circle {
+     border-radius: 50%;
+     width: 40px; /* Ajusta el tamaño según tus preferencias */
+     height: 40px;
+     background-color: black;
+     color: rgb(0, 0, 0);
+     font-size: 120rem; /* Ajusta el tamaño del texto según tus preferencias */
+     margin-right: 5px; /* Espacio entre los botones */
+ }
+
+ .d-flex {
+     justify-content:space-between; /* Centra los botones horizontalmente */
+    /* Espacio superior */
+ }
+.estrellas{
+     color: black;
+}
+
+
+.textopr{
+     color:black;
+}
