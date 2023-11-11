@@ -311,7 +311,9 @@ body {
      bottom: 5em;/* Ajusta la distancia desde la parte superior según tus preferencias */
      padding: 4em;
  }
-
+.fotopr > img{
+     padding: 2em;
+}
  .infopr {
      margin-left: 20px; /* Ajusta el margen izquierdo para evitar que el contenido se superponga con la imagen fija */
  }
@@ -346,4 +348,9 @@ body {
 
 .textopr{
      color:black;
+}
+
+
+#galeriaRelacionados{
+     padding: 3em;
 }
