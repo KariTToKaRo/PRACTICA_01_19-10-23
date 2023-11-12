@@ -314,6 +314,17 @@ body {
 .fotopr > img{
      padding: 2em;
 }
+
+.gallery-container {
+     overflow-x: auto;
+     white-space: nowrap;
+   }
+
+   .gallery-item {
+     display: inline-block;
+     width: 300px;
+     margin-right: 10px;
+   }
  .infopr {
      margin-left: 20px; /* Ajusta el margen izquierdo para evitar que el contenido se superponga con la imagen fija */
  }
