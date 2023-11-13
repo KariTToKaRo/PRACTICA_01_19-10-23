@@ -303,16 +303,24 @@ body {
 
 
 /*PRODUCTO*/
-
-.fotopr {
+#productoInfo{
+     padding:0;
+}
+.izquierda {
      position: -webkit-sticky;
      position: sticky;
-     top: 5em; 
      bottom: 5em;/* Ajusta la distancia desde la parte superior según tus preferencias */
-     padding: 4em;
- }
-.fotopr > img{
      padding: 2em;
+ }
+
+figure{
+     color:black;
+}
+
+ 
+.fotopr > img{
+     max-width: 28em;
+     justify-content: center;
 }
 
 .gallery-container {
