@@ -178,15 +178,27 @@ body {
 
 /* best sellers*/
 /*LAs barritas la de la izq*/
-.laterales{
+
+#BestSellers{
+     height: 125vh;
+     width: 100vh;
+     justify-content: space-between;
+}
+.lateralesIzq,
+.lateralesDch{
      background-color: black;
+     height: 55em;
 
 }
-
-.laterales > h1{
+.lateralesDch{
+     position:sticky;
+     float: right     ;
+}
+.lateralesIzq > h1,
+.lateralesDch > h1{
      
-     color:#FFFFFF;
-      transform: rotate(90deg); 
+ color:#FFFFFF;
+  transform: rotate(90deg); 
   transform-origin: left bottom; 
   white-space: nowrap; 
   font-family: 'HelveticaNeueBold';
@@ -194,38 +206,114 @@ body {
 
 } 
 
+.bestsellers{
+     flex: 1;
+
+
+}
 
 
 .producto_bestsellers_bestseller1,
-.producto_anuncio1_mascarilla2,
-.producto_anuncio1_mascarilla3,
-.producto_anuncio1_mascarilla4 {
+.producto_bestsellers_bestseller2,
+.producto_bestsellers_bestseller3,
+.producto_bestsellers_bestseller4,
+.producto_bestsellers_bestseller5,
+.producto_bestsellers_bestseller6 {
      display: flex;
      flex-direction: column;
-     max-width: 12em;
+   
+     
 }
 
 
 
 .producto_bestsellers_bestseller1 > div,
- {
+.producto_bestsellers_bestseller2 > div,
+.producto_bestsellers_bestseller3 > div,
+.producto_bestsellers_bestseller4 > div,
+.producto_bestsellers_bestseller5 > div,
+.producto_bestsellers_bestseller6 > div{
      display: flex;
      flex-direction: row;
      justify-content: space-between;
 }
 
 .producto_bestsellers_bestseller1 > div > p,
- {
+.producto_bestsellers_bestseller2 > div > p,
+.producto_bestsellers_bestseller3 > div > p,
+.producto_bestsellers_bestseller4 > div > p,
+.producto_bestsellers_bestseller5 > div > p,
+.producto_bestsellers_bestseller6 > div > p {
      flex-grow: 1;
 }
 
 .producto_bestsellers_bestseller1 > div > *,
-  {
+.producto_bestsellers_bestseller2 > div > *,
+.producto_bestsellers_bestseller3 > div > *,
+.producto_bestsellers_bestseller4 > div > *,
+.producto_bestsellers_bestseller5 > div > *,
+.producto_bestsellers_bestseller6 > div > * {
      margin: 0;
 }
 
 
 
+
+.rounded-button {
+     display: inline-block;
+     padding: 15px 20px;
+     border-radius: 20px;
+     border-color: #7c3232;
+     background-color: #ffffff; /* Puedes cambiar el color de fondo según tus preferencias */
+     color: #000000; /* Color del texto */
+     text-align: center;
+     border: 2px solid #000000;
+     text-decoration: none;
+     font-size: 16px;
+     cursor: pointer;
+     overflow: hidden;
+     position: relative;
+     line-height: 0px;
+   }
+
+   .rounded-button span {
+     float: left;
+     
+   }
+
+   .arrow {
+     float: right;
+     margin-left: 10px; /* Espacio entre el texto y la flecha */
+     line-height: 00px;
+ }
+.precio{
+     float:right;
+}
+
+
+
+/*SKIN ROUTINE*/
+#skinRoutine{
+     display: flex;
+     flex-wrap: wrap;
+     margin:2em;
+     width: 195vh;
+     justify-content: space-between;
+justify-items: center;
+
+}
+
+#skinRoutine > h1{
+     text-align: center;
+}
+.productoSkinRoutine_1,
+.productoSkinRoutine_2,
+.productoSkinRoutine_3,
+.productoSkinRoutine_4{
+     
+     display: flex;
+     flex-grow: row;
+}
 
 @media (min-width: 576px) { 
 
