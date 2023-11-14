@@ -27,6 +27,7 @@ body {
 header {
      background-color: #FFFFFF;
      width: 100%;
+     height: 7.5em;
 }
 
 header>p {
@@ -44,6 +45,7 @@ a {
 }
 
 #headerFlex {
+     height: 5em;
      display: flex;
      padding: .5em;
      flex-wrap: wrap;
@@ -54,7 +56,7 @@ a {
 #headerLogo {
      display: block;
      padding-right: 1em;
-     width: 5em;
+     width: auto;
      height: 100%;
      object-fit: cover;
 }
@@ -129,6 +131,14 @@ footer {
 
 #footerMain>div>ul, #footerMain>div>ul>ul {
      padding: 0;
+}
+
+#footerMain>div>ul>li {
+     font-family: HelveticaNeueBold;
+}
+
+.regular {
+     font-family: HelveticaNeueRegular !important;
 }
 
 #footerMain>* {
@@ -232,7 +242,8 @@ footer {
 
      #footerLogo {
           flex-grow: 1;
-          max-width: 45%;
+          max-width: 15%;
+          order: -1;
      }
      
      #legal {
@@ -241,6 +252,7 @@ footer {
      }
      
      .splitFooter {
-          display: none;
+          order: -1;
+          flex-grow: 1;
      }
 }
