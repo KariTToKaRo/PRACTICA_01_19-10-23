@@ -18,43 +18,43 @@
 
 /*HOME*/
 
-#faceMask {
-     height: 100vh;
+body {
+     background-color: transparent;
+}
+#anuncio1{
      background-image: url("../img/FaceMask.png");
+     width: 100%;
+     height: 100%;
      background-repeat: no-repeat;
-     background-size: 160vh;
-     background-position: -225px -10vh;
+     background-size: 100%;
+     position;
+     
+     
+}
+#anuncio_1_mascarillas{
+     height: 110vh;
+   
 }
 
+#faceMask{
+   
+     
+}
 #faceText {
      width: 70vw;
      padding: 1.5em 0 0 1em;
 }
 
-body {
-     background-color: lightgray;
-}
 
-.container{
-    color: aquamarine;
-}
+
 
 * {
      font-family: HelveticaNeueRegular;
 }
 
-#faceMask {
-     height: 100vh;
-     background-image: url("../img/FaceMask.png");
-     background-repeat: no-repeat;
-     background-size: 160vh;
-     background-position: -225px -10vh;
-}
 
-#faceText {
-     width: 70vw;
-     padding: 1.5em 0 0 1em;
-}
+
+
 
 #faceText>h1 {
      margin: 0;
@@ -67,37 +67,51 @@ body {
      font-size: 11px;
 }
 
+
+/*GALERIA ANUNCIO 1 MASCARILLAS*/
+
 #galeriaProductos>*>* { 
-     margin: 0;
+     margin: ;
 }
 
 #galeriaProductos {
      margin: 1em;
-     width: 200px;
-     position: absolute;
-     bottom: -5em;            /* ?? */
+     width: 400px;
+     position:absolute;
+     bottom: 5em;            /* ?? */
 }
 
-.producto, .productoPrincipal {
+.producto_anuncio1_mascarilla1,
+.producto_anuncio1_mascarilla2,
+.producto_anuncio1_mascarilla3,
+.producto_anuncio1_mascarilla4 {
      display: flex;
      flex-direction: column;
+     max-width: 12em;
 }
 
-.producto {
-     display: none;
-}
 
-.producto>div, .productoPrincipal>div {
+
+.producto_anuncio1_mascarilla1 > div,
+.producto_anuncio1_mascarilla2 > div,
+.producto_anuncio1_mascarilla3 > div,
+.producto_anuncio1_mascarilla4 > div {
      display: flex;
      flex-direction: row;
      justify-content: space-between;
 }
 
-.producto>div>p, .productoPrincipal>div>p {
+.producto_anuncio1_mascarilla1 > div > p,
+.producto_anuncio1_mascarilla2 > div > p,
+.producto_anuncio1_mascarilla3 > div > p,
+.producto_anuncio1_mascarilla4 > div > p {
      flex-grow: 1;
 }
 
-.producto>div>*, .productoPrincipal>div>* {
+.producto_anuncio1_mascarilla1 > div > *,
+.producto_anuncio1_mascarilla2 > div > *,
+.producto_anuncio1_mascarilla3 > div > p,
+.producto_anuncio1_mascarilla4 > div > p  {
      margin: 0;
 }
 
@@ -109,38 +123,49 @@ body {
      font-family: HelveticaNeueBold;
 }
 
-#serum {
+#anuncio_2_lipbalm {
+     margin-top:1em;
      height: 30vh;
-     background-color: #FFFFFF;
+     background-color:transparent;
 }
 
-#serum>h1 {
-     margin: 0;
+#anuncio_2_lipbalm>h2 {
+     background-color:transparent;
+   
      font-family: HelveticaNeueBold;
      text-align: center;
+     align-items: center;
+   
      position: relative;
-     font-size: 3em;
-     left: -50px;
-     display: block;
+     font-size: 9em;
+    
+     display: flex;
+     flex-wrap: wrap;
      white-space: nowrap;
      text-overflow: clip;
 }
 
-#productoSecundario {
+#producto_anuncio2 {
      margin: 1em;
      width: 120px;
      position: absolute;
      top: 835px;
 }
-
-#productoSecundario>.productoPrincipal>.precio {
+#producto_anuncio2>.productoLipBalm > img{
+     display: flex;
+     flex-wrap: wrap;
+     width: 50vh;
+     align-items: start;
+   
+}
+#producto_anuncio2>.productoLipBalm>.precio {
      position: relative;
      top: -1em;
      left: -1em;
      margin: 0;
 }
 
-#productoSecundario>.productoPrincipal>.descripcion {
+#producto_anuncio2>.productoLipBalm>.descripcion {
      position: relative;
      top: -9.5em;
      left: 13em;
@@ -148,6 +173,59 @@ body {
      width: 40vw;
      font-size: 12px;
 }
+
+
+
+/* best sellers*/
+/*LAs barritas la de la izq*/
+.laterales{
+     background-color: black;
+
+}
+
+.laterales > h1{
+     
+     color:#FFFFFF;
+      transform: rotate(90deg); 
+  transform-origin: left bottom; 
+  white-space: nowrap; 
+  font-family: 'HelveticaNeueBold';
+  font-size: 4em;
+
+} 
+
+
+
+.producto_bestsellers_bestseller1,
+.producto_anuncio1_mascarilla2,
+.producto_anuncio1_mascarilla3,
+.producto_anuncio1_mascarilla4 {
+     display: flex;
+     flex-direction: column;
+     max-width: 12em;
+}
+
+
+
+.producto_bestsellers_bestseller1 > div,
+ {
+     display: flex;
+     flex-direction: row;
+     justify-content: space-between;
+}
+
+.producto_bestsellers_bestseller1 > div > p,
+ {
+     flex-grow: 1;
+}
+
+.producto_bestsellers_bestseller1 > div > *,
+  {
+     margin: 0;
+}
+
+
+
 
 @media (min-width: 576px) { 
 
@@ -190,43 +268,50 @@ body {
           justify-content: right;
      }
      
-     .producto, .productoPrincipal {
+     .producto_anuncio1_mascarilla1,
+.producto_anuncio1_mascarilla2,
+.producto_anuncio1_mascarilla3,
+.producto_anuncio1_mascarilla4  {
           display: flex;
           flex-direction: column;
           width: 12vw;
           height: 20vh;
-          padding: 2em 5em 0 0;
+          padding:2em;
+          padding-bottom:5em;
+          padding-top:3em;
      }
-     
-     #serum {
+     /*ANUNCIO 2*/
+     #anuncio_2_lipbalm {
           height: 75vh;
           background-color: #FFFFFF;
           overflow: hidden;
      }
 
-     #serum>h1 {
+     #anuncio_2_lipbalm>h1 {
           text-align: justify;
           font-size: 17em;
+          display: flex;
+          flex-wrap: wrap;
      }
      
      /**/
-     #productoSecundario {
+     #producto_anuncio2 {
 
           width: 100%;
           position: relative;
           top: -25vh;
      }
 
-     #productoSecundario>.productoPrincipal {
+     #producto_anuncio2>.productoLipBalm {
           width: 25vw;
           padding-left: 37.5vw;
      }
 
-     #productoSecundario>.productoPrincipal>.precio {
+     #producto_anuncio2>.productoLipBalm>.precio {
           font-size: 5em;
      }
      
-     #productoSecundario>.productoPrincipal>.descripcion {
+     #producto_anuncio2>.productoLipBalm>.descripcion {
           top: -8em;
           left: 19em;
           width: 25vw;
@@ -373,3 +458,10 @@ figure{
 #galeriaRelacionados{
      padding: 3em;
 }
+
+
+
+
+
+/*CATEGORIA*/
+
