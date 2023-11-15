@@ -56,6 +56,10 @@ body {
      justify-content: space-between;
 }
 
+#galeriaBestseller>.producto>.botonRedondo {
+     width: 30vw;
+}
+
 .botonRedondo>p {
      margin: 0;
      font-size: .65em;
@@ -85,7 +89,7 @@ body {
      flex-direction: column;
 }
 
-.producto {
+#galeriaProductos>.producto {
      display: none;
 }
 
@@ -127,56 +131,127 @@ body {
 }
 
 #serum {
-     height: 50vh;
      background-color: #FFFFFF;
 }
 
 #serum>h1 {
      margin: 0;
      font-family: HelveticaNeueBold;
-     text-align: justify;
-     position: relative;
      font-size: 2.7em;
-     display: block;
+     text-align: justify;
 }
 
-#productoSecundario {
-     margin: 1em;
-     width: 120px;
-     position: absolute;
-     top: 835px;
+#serum>img {
+     height: 18em;
+     transform: translate(1em, -14em) rotate(65deg);
+     margin-bottom: -20em;
 }
 
-#productoSecundario>.productoPrincipal>.precio {
-     position: relative;
-     top: 10em;
-     left: 80vw;
+#serum>div {
+     display: flex;
+     justify-content: space-between;
+}
+
+#serum>div>.descripcion {
+     width: 55vw;
+     font-size: .75em;
+     padding-left: 1em;
+     margin-top: -1em;
+}
+
+#serum>div>div {
+     width: 40vw;
+     padding-right: 1.5em;
+     display: flex;
+     flex-direction: column;
+     justify-content: end;
+     
+}
+
+#serum>div>div>.precio {
+     text-align: right;
      margin: 0;
+     font-size: 1.5em;
+     padding-bottom: .6em;
+     z-index: 1;
 }
 
-#productoSecundario>.productoPrincipal>img {
-     position: absolute;
-     width: 120vw;
-     transform: rotate(65deg);
-     top: -3.5em;
-     left: -15vw;
+#serum>div>div>.botonRedondo {
+     display: none;
 }
 
-#productoSecundario>.productoPrincipal>.descripcion {
+#bestsellers {
+     display: flex;
+     justify-content: space-between;
+     background-color: #FFFFFF;
+}
+
+#bestsellers>.columnOuter {
+     background-color: #000000;
+     width: 10vw;
      position: relative;
-     top: 4em;
-     left: 1em;
+}
+
+#bestsellers>.columnOuter>.columnInner {
+     position: absolute;
+     top: 50%;
+     left: 50%;
+     transform: translateX(-50%) translateY(-50%) rotate(90deg);
+}
+
+#bestsellers>.columnOuter>.columnInner>h1 {
+     color: #FFFFFF;
      margin: 0;
+     white-space: nowrap;
+     font-family: HelveticaNeueBold;
+     letter-spacing: .5em;
+}
+
+#galeriaBestseller {
+     display: flex;
+     justify-content: space-around;
+     flex-grow: 1;
+     max-width: 80vw;
+     flex-wrap: wrap;
+}
+
+#galeriaBestseller>.producto {
+     display: flex;
+     flex-direction: column;
      width: 30vw;
-     font-size: 10px;
 }
 
-#productoSecundario>.productoPrincipal>div {
-     font-size: 1em;
-     position: absolute;
-     top: 11em;
-     left: 10em;
+#galeriaBestseller>.producto>img {
+     display: block;
+     width: auto;
+     max-height: 30vh;
+     object-fit: contain;
 }
+
+#galeriaBestseller.producto>div {
+     display: flex;
+     flex-direction: row;
+     justify-content: space-between;
+}
+
+#galeriaBestseller.producto>div>p {
+     flex-grow: 1;
+}
+
+#galeriaBestseller.producto>div>* {
+     margin: 0;
+}
+
+#galeriaBestseller.producto>div>img {
+     display: block;
+     height: auto;
+     max-width: 3vw;
+     object-fit: contain;
+     padding-left: .5em;
+}
+
+
+
 
 
 @media (min-width: 576px) { 
@@ -220,7 +295,7 @@ body {
           justify-content: right;
      }
      
-     .producto, .productoPrincipal {
+     #galeriaProductos> .producto, .producto, .productoPrincipal {
           display: flex;
           flex-direction: column;
           width: 12vw;
@@ -244,63 +319,49 @@ body {
           width: 15vw;
      }
 
-     #serum {
-          height: 50vh;
-          overflow: hidden;
+     #galeriaBestseller>.producto>.botonRedondo {
+          width: 15vw;
      }
 
      #serum>h1 {
-          font-size: 8.2vw;
-          line-height: .9em;
+          font-size: 8.1vw;
      }
      
-     #productoSecundario {
-
-          width: 100%;
-          position: relative;
-          top: -25vh;
-     }
-
-     #productoSecundario>.productoPrincipal {
-          width: 25vw;
-          padding-left: 37.5vw;
-     }
-
-     #productoSecundario>.productoPrincipal>.precio {
-          font-size: 5em;
-          position: absolute;
-          top: 4.5em;
-          left: auto;
-          right: 2vw;
-     }
-
-     #productoSecundario>.productoPrincipal>div {
-          font-size: 2em;
-          position: absolute;
-          top: 14em;
-          left: auto;
-          right: 2vw;
+     #serum>img {
+          height: 40em;
+          transform: translate(30vw, -35em) rotate(20deg);
+          margin-bottom: -50em;
      }
      
-     #productoSecundario>.productoPrincipal>.descripcion {
-          
-          position: absolute;
-          top: 8em;
-          left: 1em;
-          width: 30vw;
-          font-size: 2.2em;
-     }
-     
-     #productoSecundario>.productoPrincipal>img {
-          position: relative;
-          transform: rotate(20deg) translate(10em,0em);
-          object-fit: contain;
-          scale: 3.5;
-          height: auto;
-          width: auto;
+     #serum>div>.descripcion {
+          width: 17vw;
+          font-size: 1.5em;
+          padding-left: 3em;
      }
 
-     #productoSecundario>.productoPrincipal>hr {
-          display: none;
+     #serum>div>div>.precio {
+          font-size: 3em;
+          padding-bottom: 0;
+     }
+     
+     #serum>div>div>.botonRedondo {
+          display: flex;
+          align-self: right;
+          margin-left: auto;
+          font-size: 1.5em;
+          margin-bottom: 1em;
+     }
+
+     #bestsellers>.columnOuter {
+          width: 3vw;
+     }
+
+     #galeriaBestseller {
+          max-width: 95vw;
+     }
+     
+     #galeriaBestseller>.producto {
+          width: 15vw;
+          height: 45vh;
      }
 }
