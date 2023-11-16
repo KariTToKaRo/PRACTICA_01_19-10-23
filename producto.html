@@ -3,30 +3,31 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
-
     <title>INFORMACIÓN DEL PRODUCTO</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
- </head>
-  <body>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
- <!-- navegador-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/producto.css">
+    <link rel="stylesheet" href="css/headerFooter.css">
+  </head>
 
 
+    <!-- navegador-->
  <header>
-  <p>Código de descuento: PotsCosmetics2023</p>
+  <div id="animationScroll">
+      <p>Código de descuento: PotsCosmetics2023</p>
+  </div>
 
   <div id="headerFlex">
-      <img src="img/Logo.png" alt="Logo de página" id="headerLogo">
+      <a href="./home.html"><img src="img/Logo.png" alt="Logo de página" id="headerLogo"></a>
       <div id="searchBar">
-          <p>Barra de busqueda</p>
+          <p>Search</p>
           <img src="img/Magnifier.png" alt="Icono de busqueda">
       </div>
       <div class="splitHeader"></div>
       <nav id="menu">
           <ul>
               <li>
-                  <a href="">SKIN ROUTINE</a>
+                  <a href="./categoria.html">SKIN ROUTINE</a>
               </li>
               <li>
                   <a href="">RE-FILL</a>
@@ -46,40 +47,68 @@
       </div>
   </div>
 </header>
+ 
+ 
 
+<section id="productoInfo">
+  <div class="col-md-6 nombrepr" style="display: flex; float:right; padding: 0; flex-direction:column; ">
+    <h1>SO FRESH</h1>
+   <p> Descripción breve del producto.Descripción breve del producto.</p>
+   <p>Hydrating serum with caffeine, vitamin C, vitaminc B3, cucumber, hemp and aloe vera.
+  </p> 
+  <p>Content 30ml.
+  </p> 
+  <p>
+    A lightweight serum to refresh and rehydrate skin on a multi-depth level.
+  </p>
+</div>
 
-
-<div class="container">
+<div class="container Producto" style="display: flex; ">
   <div class="row align-items-start">
-  <div class="col">
+  <div class="col-md-6 col-12 izquierda" >
+<figure>
+  <img src="img/POTS/Producto/producto/Producto_Frente.png" class="img-fluid " alt="SerumVerdeFrente"  >
 
-   <img src="https://placeholder.com/600" class="img-fluid" alt="foto producto" >
-
+</figure>
+   
 
    <!-- aqui meter carrusel de las fotos ya veremos como se conectan entre si mecagoento-->
-   <div class="container">
+     
+   <div class="galeriaProducto" style="display: flex; flex-direction: row; max-width: 100%;">
+    <div class="row">
+      <div class="col-md-4 col-12" style="width: 33%;">
+        <figure>
+          <img src="img/POTS/Producto/producto/Producto_Frente.png" class="img-fluid" alt="SerumVerdeFrente">
+        </figure>
+  
+      </div>
+      
+      <div class="col-md-4 col-12" style="width: 33%;">
+        <figure>
+          <img src="img/POTS/Producto/producto/Producto_Detras.png" class="img-fluid" alt="SerumVerdeDetras">
+        </figure>
+      </div>
+      
+
+      <div class="col-md-4 col-12" style="width: 33%;" >
+        <figure>
+          <img src="img/POTS/Producto/producto/Producto_Liquid.png" class="img-fluid" alt="SerumVerdeLiquid" style="display: flex; max-width: 100%; height: auto;">
+        </figure>
+      </div>
+     
+
+
+    </div>
+    
     
    </div>
   </div>
 
-  <div class="col">
+  <div class="col-md-6 col-12 derecha" style="display:flex; flex-direction: column; ">
    
-    <div class="container">
-        <h1>Nombre del Producto</h1>
-       <p> Descripción breve del producto.Descripción breve del producto.</p>
+    
 
-
-    </div>
-<!--botones-->
-    <div class="container botones">
-      <div class="d-flex">
-      
-        <button class="btn btn-primary btn-circle">1</button>
-        <button class="btn btn-secondary btn-circle">2</button>
-        <button class="btn btn-success btn-circle">3</button>
-        <button class="btn btn-danger btn-circle">4</button>
-      </div>
-    </div>
+  
 <!--estrellas-->
     <div class="container estrellas">
       <i class="fas fa-star"></i>
@@ -93,197 +122,259 @@
 
     <!--descripcion del producto-->
 
-    <div class="container">
-      <p class="fw-bold">Descripción del producto </p>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce scelerisque pharetra enim ac venenatis. Maecenas vel velit, non consectetur velit. Pellentesque pulvinar sapien volutpat enim vestibulum, sed mattis felis luctus. Suspendisse potenti. Nulla semper urna tortor, in faucibus nisl eleifend quis. Donec at augue luctus, mollis tortor ut, luctus odio.</p>
-    </p> <br>
-    <p class="fw-bold">Contenido </p> 
-    <p>xx ml</p>
-    <p class="fw-bold">¿Por qué nos encanta? </p>
+    <div class="container descripcion">
+      
+  
+    
+    <br>
+    
+    <p class="fw-bold">The formula of this facial serum contains tea tree, cucumber and extracts of hemp, algae and aloe vera. These natural ingredients help to soothe, hydrate and soften your skin, making it a versatile ally to keep your skin fresh and hydrated at any time of the day.  This ultra-pure serum combines 3 types of hyaluronic acid and caffeine at varying molecular sizes with Vitamin B3 and Vitaminc C to offer lasting hydration and visible plumping of the skin at all levels of the dermis. 
+     <br> · Vegan
+     <br> · Cruelty free
+     <br> · Silicone free
+     <br> · SLS free
+     <br> · Dermatologist approved
+     <br>
+      
+      SO FRESH is ideal for the daily care of oily and normal skin
+      
+      
+       </p> 
+   
+    
 
 
 
     <div class="row align-items-start">
-    <div class="container gusta1">
+   
+      <div class="col dibujos" style="display: flex; flex-direction: column; max-width: 25%; ">
+        <figure> 
+           <img src="img/POTS/producto/iconInfo/icon1.png" class="img-fluid" style="margin-bottom: 3em;" alt="iconitos family friendly" >
+        </figure>
       
-      <div class="col">
-        <img src="https://placeholder.com/100" class="img-fluid" alt="iconitos family friendly" >
+        <figure> 
+          <img src="img/POTS/producto/iconInfo/icon2.png" class="img-fluid" style="margin-bottom: 0.2em;"alt="iconitos family friendly" >
+       </figure>
+     
+       <figure> 
+        <img src="img/POTS/producto/iconInfo/icon3.png" class="img-fluid" style="margin-bottom: 0em;" alt="iconitos family friendly" >
+     </figure>
+   
+     <figure> 
+      <img src="img/POTS/producto/iconInfo/icon4.png" class="img-fluid" style="margin-bottom: .5em;"alt="iconitos family friendly" >
+   </figure>
+ 
        
       </div>
-      <div class="col">
+      <div class="col textito" style="display: flex; flex-direction: column; ">
       
-        <p>lorem ipsum noseuqe</p>
+        <p>· Caffeine - A natural skin brightener derived from wheat, has anti-inflammatory properties, so is particularly effective at treating redness and uneven skin tone caused by conditions such as antioxidation, pollution or tiredness. </p>
+      <br>
+      <p>· Hyaloronic Acid - Acts as a moisturising and supporting agent to keep it looking young. Moisturises, prevents wrinkles, provides radiance ...</p>
+      <br>
+      <p>· Vitamin B3 - Hydrates and heals dry and damaged skin by stabilising skin's barrier function and promoting the growth of stronger tissue.</p>
+      <br>
+      <p>· Vitamin C -  Powerful antioxidant, brightening dull skin to targeting the effects of pollution and sun damage, fading pigmentation, targeting dark circles, and improving skin tone, vitamin C can benefit almost all skin types and concerns.</p>
+
+      <br>
+
+      
       </div>
 
       </div>
 
       
-      <div class="container gusta2">
-        <div class="col">
-          <img src="https://placeholder.com/100" class="img-fluid" alt="iconitos family friendly" >
-         
-        </div>
-        <div class="col">
-        
-          <p>lorem ipsum noseuqe</p>
-        </div>
-  
-        </div>
-
-
-        <div class="container gusta3">
-          <div class="col">
-            <img src="https://placeholder.com/100" class="img-fluid" alt="iconitos family friendly" >
-           
-          </div>
-          <div class="col">
-          
-            <p>lorem ipsum noseuqe</p>
-          </div>
-    
-          </div>
-
-
-          <div class="container gusta4">
-            <div class="col">
-              <img src="https://placeholder.com/100" class="img-fluid" alt="iconitos family friendly" >
-             
-            </div>
-            <div class="col">
-            
-              <p>lorem ipsum noseuqe</p>
-            </div>
       
-            </div>
-
-            </div>
-           
-            
-            <hr class="border border-dark border-1 opacity-100">
-            
-            <div class="container">
-              <div class="accordion" id="accordionExample">
-                <!-- Elemento 1: Guía de uso -->
-                <div class="card">
-                  <div class="card-header" id="headingOne">
-                    <h2 class="mb-0">
-                      <div class="btn btn-outline-secondary btn-circle w-100 d-flex justify-content-between" type="text-success" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                        <span class="text-black">Guía de uso</span>
-                        <span><i class="fas fa-plus"></i></span>
-                      </div>
-                    </h2>
-                  </div>
-                </div>
-
-                <hr class="border border-dark border-1 opacity-100">
-
-                <!-- Elemento 2: Ingredientes principales -->
-                <div class="card">
-                  <div class="card-header" id="headingTwo">
-                    <h2 class="mb-0">
-                      <div class="btn btn-outline-secondary btn-circle w-100 d-flex justify-content-between" type="text-success" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                        <span class="text-black">Ingredientes principales</span>
-                        <span><i class="fas fa-plus"></i></span>
-                      </div>
-                    </h2>
-                  </div>
-                </div>
-
-                <hr class="border border-dark border-1 opacity-100">
-
-                <!-- Elemento 3: Ingredientes -->
-                <div class="card">
-                  <div class="card-header" id="headingThree">
-                    <h2 class="mb-0">
-                      <div class="btn btn-outline-secondary btn-circle w-100 d-flex justify-content-between" type="text-success" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                        <span class="text-black">Ingredientes</span>
-                        <span><i class="fas fa-plus"></i></span>
-                      </div>
-                    </h2>
-                  </div>
-                </div>
-            
-
-                <hr class="border border-dark border-1 opacity-100">
+       
+        </div>
 
 
-                
-                <!-- Elemento 4: FAQs -->
-                <div class="card">
-                  <div class="card-header" id="headingFour">
-                    <h2 class="mb-0">
-                      <div class="btn btn-outline-secondary btn-circle w-100 d-flex justify-content-between" type="text-success" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                        <span class="text-black">FAQs</span>
-                        <span><i class="fas fa-plus"></i></span>
-                      </div>
-                    </h2>
-                  </div>
-                </div>
-                <!-- Otros elementos de pestañas o acordeones pueden agregarse aquí -->
+        <div class="masInformacion" style="display: flex; flex-direction: column;">
+
+          <div class="toggle-button">
+            <button class="btn btn-link" type="button" data-bs-toggle="collapse" data-bs-target="#collapseDirection" aria-expanded="false" aria-controls="collapseDirection">+</button>
+            <span>Direction</span>
+            <div id="collapseDirection" class="collapse"> <p>Use alone: Gently pat 1-2 drops directly onto the skin, before applying moisturiser.
+  Can be used AM and PM. Suitable for daily use.</p>
+  <p>Mixed with moisturiser or mask:
+    <br>
+    · Apply some moisturiser or mask onto the back of your hand.
+    <br>
+    · Mix in 1-2 drops of serum and then smooth over cleanse skin.
+    <br>
+    · Use a maximum of 2 SkinHits at a time.
+    <br>
+    Please note: For sensitive skin or skin that is prone to reactions, patch testing prior to use is advised.
+    </p>
               </div>
+          </div>
+
+          <div class="toggle-button">
+            <button class="btn btn-link" type="button" data-bs-toggle="collapse" data-bs-target="#collapseRecycling" aria-expanded="false" aria-controls="collapseRecycling">+</button>
+            <span>Recycling</span>
+            <div id="collapseRecycling" class="collapse">· DECONSTRUCT - Separate glass stem from dropper <br>
+              · CLEAN - Rinse & dry bottle & pipette<br>
+              · RECYCLE - Bottle, glass stem & outer box using the relevant bins<br>
+              · CHECK - Dropper is not widely recycled, check with your local council<br>
+              </div>
+          </div>
+
+          <div class="toggle-button">
+            <button class="btn btn-link" type="button" data-bs-toggle="collapse" data-bs-target="#collapseIngredients" aria-expanded="false" aria-controls="collapseIngredients">+</button>
+            <span>Ingredients</span>
+            <div id="collapseIngredients" class="collapse">Aqua (Water),Azelaic Acid, Aloe Vera Extract, Algae Extract, Cocos Nucifera (Coconut) Oil, Citric Acid, Hemp Extract, Cucumis Sativus (Cucumber) Fruit Water, Hydrolyzed Hyaluronic Acid,  Melaleuca Alternifolia (Tea Tree) Leaf Oil, Mentha Piperita (Peppermint) Oil, Simmondsia Chinensis (Jojoba) Seed Oil, Melaleuca Alternifolia (Tea Tree) Leaf Oil, Vitamin B3 and Vitaminc C.
             </div>
+          </div>
 
-            
-            
-  </div>
+          <div class="toggle-button">
+            <button class="btn btn-link" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFAQs" aria-expanded="false" aria-controls="collapseFAQs">+</button>
+            <span>FAQs</span>
+            <div id="collapseFAQs" class="collapse">Why it's so cool?</div>
+          </div>
 
-
-  
-</div>
-
-
-
-
-
-
-
-
-
-
-</div>
+        </div>
+        <!--FIN COLUMNA DERECHA-->
             </div>
+           
             
-    </div>
-  <!---->
-
-  
-  </div>
-</div>
-    </div>
-
+            
+            
+           </div>
+          </div>
+  </section>
 
     <!--galeria debajo del producto-->
-    
-  <div class="container-fluid">
+    <section id="fotosProductoCarrusel">
+  <div class="container-fluid" style="display: flex;">
     <div class="row">
-      <div class="col-md-4">
-        <img src="https://placeholder.com/700x400" class="img-fluid" alt="Imagen 1">
-      </div>
-      <div class="col-md-4">
-        <img src="https://placeholder.com/700x400" class="img-fluid" alt="Imagen 2">
-      </div>
-      <div class="col-md-4">
-        <img src="https://placeholder.com/700x400" class="img-fluid" alt="Imagen 3">
-      </div>
+     
+        <img src="img/POTS/Producto/galeria_2/galeria_producto_1.jpg" class="img-fluid" alt="Imagen 1"style="margin: 0; padding: 0; max-width: 33%;">
+     
+    
+        <img src="img/POTS/producto/galeria_2/galeria_producto_2.jpg" class="img-fluid" alt="Imagen 2"style="margin: 0; padding: 0; max-width: 33%;">
+
+     
+        <img src="img/POTS/producto/galeria_2/galeria_producto_3.jpg" class="img-fluid" alt="Imagen 3"style="margin: 0; padding: 0;  max-width: 33%;">
+
     </div>
   </div> 
-  <div class="=container-fluid">
-    <div class="categoria">
-      <p> en el inspeccionar consigo quitarle el padding pero en el visualcode no me deja ayuda ª</p>
+</section>
 
-    </div>
 
-  </div>
-              
+<!--SECION DE RELACIONAOS-->
+<section id="GaleriaProductosRelacionados">
+  <h2 id="tituloRelacionados">YOU MAY ALSO LIKE</h2> 
+  <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <!-- Group of 3 products -->
+      <div class="carousel-item active">
+        <div class="d-flex justify-content-around">
+          <!-- Product 1 -->
+          <div class="producto_recomendados_relacionados1">
+            <img src="img/POTS/producto/recomendados/recomendados_1.png" alt="Foto de producto">
+            <p class="tituloProducto">24/7 PROTECTED</p>
+            <p>Sun Cream SPF+50</p>
+            <div>
+              <p class="precio">XX.X€</p>
             </div>
-
-
-
+            <a href="" class="rounded-button">
+              <span>Add to Cart</span>
+              <img src="img/Arrow.png" alt="Flecha" class="arrow">
+            </a>
+            <hr>
+          </div>
+          <!-- Product 2 -->
+          <div class="producto_recomendados_relacionados1">
+            <img src="img/POTS/producto/recomendados/recomendados_2.png" alt="Foto de producto">
+            <p class="tituloProducto">24/7 PROTECTED</p>
+            <p>Sun Cream SPF+50</p>
+            <div>
+              <p class="precio">XX.X€</p>
+            </div>
+            <a href="" class="rounded-button">
+              <span>Add to Cart</span>
+              <img src="img/Arrow.png" alt="Flecha" class="arrow">
+            </a>
+            <hr>
+          </div>
+          <!-- Product 3 -->
+          <div class="producto_recomendados_relacionados1">
+            <img src="img/POTS/producto/recomendados/recomendados_3.png" alt="Foto de producto">
+            <p class="tituloProducto">24/7 PROTECTED</p>
+            <p>Sun Cream SPF+50</p>
+            <div>
+              <p class="precio">XX.X€</p>
+            </div>
+            <a href="" class="rounded-button">
+              <span>Add to Cart</span>
+              <img src="img/Arrow.png" alt="Flecha" class="arrow">
+            </a>
+            <hr>
+          </div>
+        </div>
+      </div>
+      <!-- Group of next 3 products -->
+<div class="carousel-item">
+  <div class="d-flex justify-content-around">
+    <!-- Product 4 -->
+    <div class="producto_recomendados_relacionados1">
+      <img src="img/POTS/producto/recomendados/recomendados_4.png" alt="Foto de producto">
+      <p class="tituloProducto">24/7 PROTECTED</p>
+      <p>Sun Cream SPF+50</p>
+      <div>
+        <p class="precio">XX.X€</p>
+      </div>
+      <a href="" class="rounded-button">
+        <span>Add to Cart</span>
+        <img src="img/Arrow.png" alt="Flecha" class="arrow">
+      </a>
+      <hr>
+    </div>
+    <!-- Product 5 -->
+    <div class="producto_recomendados_relacionados1">
+      <img src="img/POTS/producto/recomendados/recomendados_5.png" alt="Foto de producto">
+      <p class="tituloProducto">24/7 PROTECTED</p>
+      <p>Sun Cream SPF+50</p>
+      <div>
+        <p class="precio">XX.X€</p>
+      </div>
+      <a href="" class="rounded-button">
+        <span>Add to Cart</span>
+        <img src="img/Arrow.png" alt="Flecha" class="arrow">
+      </a>
+      <hr>
+    </div>
+    <!-- Product 6 -->
+    <div class="producto_recomendados_relacionados1">
+      <img src="img/POTS/producto/recomendados/recomendados_6.png" alt="Foto de producto">
+      <p class="tituloProducto">24/7 PROTECTED</p>
+      <p>Sun Cream SPF+50</p>
+      <div>
+        <p class="precio">XX.X€</p>
+      </div>
+      <a href="" class="rounded-button">
+        <span>Add to Cart</span>
+        <img src="img/Arrow.png" alt="Flecha" class="arrow">
+      </a>
+      <hr>
+    </div>
+  </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+</section>
 
 
             <footer>
               <div id="footerMain">
-                  <img src="img/Logo.png" alt="Logo de pagina" id="footerLogo">
+                  <img src="img/POTS/elementos/logoFooter.png" alt="Logo de pagina" id="footerLogo">
                   <div id="skinRoutine">
                       <h3>SKIN ROUTINE</h3>
                       <ul>
@@ -351,5 +442,7 @@
                   <p>Designed and developed by Carolina Callado & Luna González</p>
               </div>
           </footer>
+          <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+          <script src="js/producto.js"></script>
   </body>
-</html>
+</html> 
