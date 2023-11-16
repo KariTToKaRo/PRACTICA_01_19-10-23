@@ -12,9 +12,6 @@ html {
      overflow-x: hidden;
 }
 
-body {
-     background-color: lightgray;
-}
 
 .container{
     color: aquamarine;
@@ -28,7 +25,7 @@ body {
      height: 100vh;
      background-image: url("../img/FaceMask.png");
      background-repeat: no-repeat;
-     background-size: 160vh;
+     background-size: 170vh;
      background-position: -225px -10vh;
 }
 
@@ -294,6 +291,10 @@ hr {
 
 
 @media (min-width: 768px) {
+     .faceMask {
+          background-position: -526px -10vh;
+     }
+     
      #serum>h1 {
           font-size: 8.1vw;
      }
@@ -326,9 +327,9 @@ hr {
 
 
 @media (min-width: 992px) { 
-     #faceMask {
-          background-size: 115vw;
-          background-position: -225px -40vh;
+     .faceMask {
+          background-size: 200vh;
+          background-position: -115px -10vh;
      }
      
      #faceText {

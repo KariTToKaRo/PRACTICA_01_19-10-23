@@ -215,6 +215,10 @@ footer {
      height: 100%;
 }
 
+#footerLogo {
+     object-fit: cover;
+}
+
 @media (min-width: 576px) { 
 
      }
@@ -280,7 +284,7 @@ footer {
 
      #footerLogo {
           flex-grow: 1;
-          max-width: 100%;
+          object-fit: contain;
           order: -1;
      }
      
