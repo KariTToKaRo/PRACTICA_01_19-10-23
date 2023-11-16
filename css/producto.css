@@ -1,0 +1,201 @@
+@font-face {
+    font-family: 'HelveticaNeueBold';
+    src: url("../fonts/HelveticaNeueBold.ttf");
+}
+/*<<<<<<< Updated upstream*/
+@font-face {
+    font-family: 'HelveticaNeueRegular';
+    src: url("../fonts/HelveticaNeueRegular.ttf");
+}
+@font-face {
+  font-family: 'BodoniModa';
+  src: url("../fonts/BodoniModa.ttf");
+}
+* {
+    font-family: HelveticaNeueRegular;
+}
+
+/*PRODUCTO*/
+#productoInfo{
+    padding:0;
+}
+.izquierda {
+    position: -webkit-sticky;
+    position: sticky;
+    top:0;
+    bottom: 5em;/* Ajusta la distancia desde la parte superior según tus preferencias */
+    padding: 2em;
+}
+
+figure{
+    color:black;
+}
+
+.producto{
+  position: sticky;
+}
+.fotopr > img{
+    max-width: 28em;
+    justify-content: center;
+}
+
+.gallery-container {
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+
+  .gallery-item {
+    display: inline-block;
+    width: 300px;
+    margin-right: 10px;
+  }
+.infopr {
+    margin-left: 20px; /* Ajusta el margen izquierdo para evitar que el contenido se superponga con la imagen fija */
+}
+
+.nombrepr{
+    
+    color: black;
+    float: right;
+   
+    float: right;
+}
+.nombrepr > h1{
+  font-family: 'BodoniModa';
+}
+.botones{
+    display: flex;
+    justify-content:space-between; 
+}
+
+.btn-circle {
+    border-radius: 50%;
+    width: 40px; /* Ajusta el tamaño según tus preferencias */
+    height: 40px;
+    background-color: black;
+    color: rgb(0, 0, 0);
+    font-size: 120rem; /* Ajusta el tamaño del texto según tus preferencias */
+    margin-right: 5px; /* Espacio entre los botones */
+}
+
+.d-flex {
+    justify-content:space-between; /* Centra los botones horizontalmente */
+   /* Espacio superior */
+}
+.estrellas{
+    color: black;
+}
+
+
+.textopr{
+    color:black;
+}
+
+/*botones de ver mas*/
+.masInformacion {
+  display: flex;
+  flex-direction: column;
+}
+
+.toggle-button {
+  border-bottom: 1px solid #000;
+}
+
+.toggle-button > div {
+  display: flex;
+  flex-direction: column;
+}
+
+
+#GaleriaProductosRelacionados {
+    text-align: center;
+    margin-top: 2em;
+    font-weight: bolder;
+  }
+
+  .container-fluid {
+    display: flex;
+    overflow: hidden;
+  }
+
+  .categoria {
+    display: flex;
+  }
+
+  .galeriaRecomendados {
+    display: flex;
+    transition: transform 0.5s ease;
+  }
+
+  .producto_recomendados_relacionados1 {
+    width: 15em;
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .rounded-button {
+    display: inline-block;
+    padding: 15px 20px;
+    border-radius: 20px;
+    background-color: #ffffff;
+    color: #000000;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;
+    overflow: hidden;
+    position: relative;
+  }
+
+  .toggle-button > div {
+    display: flex;
+    flex-direction: column;
+  }
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: black;
+}
+
+/*RESPONSIVE MOVIL PRODUCTO*/
+@media (max-width: 576px) {
+  .masInformacion {
+    flex-direction: column;
+  }
+
+  .toggle-button {
+    width: 100%;
+  }
+
+  .carousel-item .d-flex {
+    flex-direction: column;
+  }
+
+  .producto_recomendados_relacionados1 {
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    margin-left: 4em;
+  }
+  .nombrepr{
+    max-width: 100%;
+    float: none;
+    margin-left: 0;
+    margin-top: 1em;
+    margin-bottom: 1em;
+  }
+
+ #productoInfo{
+  display: flex;
+  flex-direction: column;
+ }
+
+ .izquierda{
+  position: static;
+ max-width: max-content;
+ }
+ .galeriaProducto{
+  flex-direction: row;
+ }
+}
