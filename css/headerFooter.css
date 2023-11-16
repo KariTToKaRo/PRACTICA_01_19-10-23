@@ -28,17 +28,35 @@ body {
 header {
      background-color: #FFFFFF;
      width: 100%;
-     height: 7.5em;
+     height: 10em;
 }
 
-header>p {
-     display: block;
+#animationScroll {
+     display: inline-block;
      background-color: #1E1E1E;
-     color: #FFFFFF;
-     text-align: center;
+     width: 100vw;
      margin-top: 0px;
      margin-bottom: 0px;
-     padding: .5em;
+     
+     overflow: hidden;
+     white-space: nowrap;
+     
+}
+
+#animationScroll>p {
+     color: #FFFFFF;
+     text-align: center;
+     font-family: HelveticaNeueRegular;
+     padding: 0 0 0 100%;
+     animation: scrollAnim 5s linear infinite;
+     margin: 1em 0 1em 0;
+}
+
+
+@keyframes scrollAnim {
+     0% {transform: translate(0, 0);}
+     100% {transform: translate(-125%, 0);}
+     
 }
 
 a {
@@ -90,6 +108,7 @@ a {
      order: 0;
      flex-grow: 1;
      height: 1.5em;
+     text-align: center;
 }
 
 #menu>ul {
@@ -97,6 +116,7 @@ a {
      justify-content: flex-start;
      margin: 0;
      align-items: center;
+     padding: 0;
 }
 
 #menu>ul>li {
@@ -201,11 +221,17 @@ footer {
 
 
 @media (min-width: 768px) {
-
+     header {
+          height: 10em;
+     }
       }
 
 
 @media (min-width: 992px) { 
+
+     header {
+          height: 8em;
+     }
      .splitHeader {
           width: 0%;
           height: .5em;

@@ -81,7 +81,6 @@ body {
      margin: 1em;
      width: 200px;
      position: absolute;
-     bottom: -5em;            /* ?? */
 }
 
 .producto, .productoPrincipal {
@@ -219,12 +218,14 @@ body {
      display: flex;
      flex-direction: column;
      width: 30vw;
+     padding-bottom: 1em;
 }
 
 #galeriaBestseller>.producto>img {
      display: block;
      width: auto;
-     max-height: 30vh;
+     height: 30vh;
+     width: 30vw;
      object-fit: contain;
 }
 
@@ -250,8 +251,38 @@ body {
      padding-left: .5em;
 }
 
+#skincare {
+     background-color: #FFFFFF;
+}
 
+#skincare>h1 {
+     background-color: #53CE06;
+     margin: 0;
+     font-family: HelveticaNeueBold;
+     font-size: 1.5em;
+     padding: .5em .5em .5em .5em;
+     margin-bottom: 1em;
+}
 
+#galeriaSkincare {
+     display: flex;
+     background-color: #FFFFFF;
+     height: 36vh;
+     width: 100vw;
+     justify-content: space-evenly;
+}
+
+#galeriaSkincare>.producto {
+     width: 20vw;
+}
+
+#galeriaSkincare>.producto>*, #galeriaSkincare>.producto>*>* {
+     margin: 0;
+}
+
+hr {
+     margin: 0;
+}
 
 
 @media (min-width: 576px) { 
@@ -260,8 +291,35 @@ body {
 
 
 @media (min-width: 768px) {
+     #serum>h1 {
+          font-size: 8.1vw;
+     }
+     
+     #serum>img {
+          height: 25em;
+          transform: translate(25vw, -37em) rotate(20deg);
+          margin-bottom: -50em;
+     }
+     
+     #serum>div>.descripcion {
+          width: 20vw;
+          font-size: 1em;
+          padding-left: 3em;
+     }
 
+     #serum>div>div>.precio {
+          font-size: 2.5em;
+          padding-bottom: 0;
+     }
+     
+     #serum>div>div>.botonRedondo {
+          display: flex;
+          align-self: right;
+          margin-left: auto;
+          font-size: 1.5em;
+          margin-bottom: 1em;
       }
+}
 
 
 @media (min-width: 992px) { 
@@ -285,7 +343,7 @@ body {
           width: 200px;
           display: flex;
           position: absolute;
-          top: 5em;
+          top: 7em;
           right: 0vw;
           width: 50vw;
           height: 60vh;
@@ -305,6 +363,8 @@ body {
 
      .producto>img, .productoPrincipal>img {
           max-height: 20vh;
+          max-width: 25vw;
+          align-self: center;
      }
 
      .producto>div>img, .productoPrincipal>div>img {
@@ -361,7 +421,25 @@ body {
      }
      
      #galeriaBestseller>.producto {
-          width: 15vw;
+          width: 20vw;
           height: 45vh;
+     }
+
+     #skincare>h1 {
+          font-size: 2em;
+          padding: .3em .3em .3em .6em;
+     }
+     
+     #galeriaSkincare {
+          height: 30vh;
+     }
+     
+     #galeriaSkincare>.producto {
+          width: 25vw;
+          padding: 0 3em 0 3em;
+     }
+     
+     #galeriaSkincare>.producto>*, #galeriaSkincare>.producto>*>* {
+          margin: 0;
      }
 }
