@@ -34,7 +34,7 @@ header {
 #animationScroll {
      display: inline-block;
      background-color: #1E1E1E;
-     width: 100%;
+     width: 100vw;
      margin-top: 0px;
      margin-bottom: 0px;
      
@@ -232,6 +232,17 @@ footer {
      header {
           height: 8em;
      }
+
+     #animationScroll>p {
+          animation: scrollAnim 11s linear infinite;
+     }
+
+     @keyframes scrollAnim {
+          0% {transform: translate(0, 0);}
+          100% {transform: translate(-110%, 0);}
+          
+     }
+
      .splitHeader {
           width: 0%;
           height: .5em;
@@ -269,7 +280,7 @@ footer {
 
      #footerLogo {
           flex-grow: 1;
-          max-width: 100%;
+          max-width: 15%;
           order: -1;
      }
      
