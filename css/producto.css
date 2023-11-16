@@ -192,6 +192,10 @@ figure{
  }
 
  .izquierda{
+  position: static;
  max-width: max-content;
+ }
+ .galeriaProducto{
+  flex-direction: row;
  }
 }
