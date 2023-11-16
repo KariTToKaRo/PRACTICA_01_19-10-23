@@ -27,7 +27,7 @@ body {
 
 header {
      background-color: #FFFFFF;
-     width: 100%;
+     width: 100vw;
      height: 10em;
 }
 
@@ -133,7 +133,7 @@ a {
 
 footer {
      background-color: #FFFFFF;
-     width: 100%;
+     width: 100vw;
      padding: 0;
      padding-top: 1em;
 }
@@ -280,7 +280,7 @@ footer {
 
      #footerLogo {
           flex-grow: 1;
-          max-width: 15%;
+          max-width: 100%;
           order: -1;
      }
      

@@ -8,7 +8,9 @@
      src: url("../fonts/HelveticaNeueRegular.ttf");
 }
 
-
+html {
+     overflow-x: hidden;
+}
 
 body {
      background-color: lightgray;
@@ -22,7 +24,7 @@ body {
      font-family: HelveticaNeueRegular;
 }
 
-#faceMask {
+.faceMask {
      height: 100vh;
      background-image: url("../img/FaceMask.png");
      background-repeat: no-repeat;
@@ -141,9 +143,10 @@ body {
 }
 
 #serum>img {
-     height: 18em;
-     transform: translate(1em, -14em) rotate(65deg);
-     margin-bottom: -20em;
+     height: 15em;
+     transform: translate(3em, -14em) rotate(65deg);
+     margin-bottom:-20em;
+     overflow: hidden;
 }
 
 #serum>div {
