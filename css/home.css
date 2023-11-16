@@ -1,0 +1,448 @@
+@font-face {
+     font-family: 'HelveticaNeueBold';
+     src: url("../fonts/HelveticaNeueBold.ttf");
+}
+
+@font-face {
+     font-family: 'HelveticaNeueRegular';
+     src: url("../fonts/HelveticaNeueRegular.ttf");
+}
+
+html {
+     overflow-x: hidden;
+}
+
+body {
+     background-color: lightgray;
+}
+
+.container{
+    color: aquamarine;
+}
+
+* {
+     font-family: HelveticaNeueRegular;
+}
+
+.faceMask {
+     height: 100vh;
+     background-image: url("../img/FaceMask.png");
+     background-repeat: no-repeat;
+     background-size: 160vh;
+     background-position: -225px -10vh;
+}
+
+#faceText {
+     width: 70vw;
+     padding: 1.5em 0 0 1em;
+}
+
+#faceText>h1 {
+     margin: 0;
+     font-family: HelveticaNeueBold;
+     font-size: 1.75em;
+}
+
+#faceText>p {
+     margin: 0;
+     font-size: 11px;
+}
+
+.botonRedondo {
+     margin-top: .5em;
+     border: 1px solid black;
+     padding: .2em 0 .2em .5em;
+     border-radius: 1em;
+     width: 40vw;
+     display: flex;
+     justify-content: space-between;
+}
+
+#galeriaBestseller>.producto>.botonRedondo {
+     width: 30vw;
+}
+
+.botonRedondo>p {
+     margin: 0;
+     font-size: .65em;
+}
+
+.botonRedondo>img {
+     display: block;
+     width: auto;
+     max-height: 40vh;
+     object-fit: contain;
+     padding-right: .5em;
+}
+
+#galeriaProductos>*>* { 
+     margin: 0;
+}
+
+#galeriaProductos {
+     margin: 1em;
+     width: 200px;
+     position: absolute;
+}
+
+.producto, .productoPrincipal {
+     display: flex;
+     flex-direction: column;
+}
+
+#galeriaProductos>.producto {
+     display: none;
+}
+
+.producto>img, .productoPrincipal>img {
+     display: block;
+     width: auto;
+     max-height: 40vh;
+     object-fit: contain;
+}
+
+.producto>div, .productoPrincipal>div {
+     display: flex;
+     flex-direction: row;
+     justify-content: space-between;
+}
+
+.producto>div>p, .productoPrincipal>div>p {
+     flex-grow: 1;
+}
+
+.producto>div>*, .productoPrincipal>div>* {
+     margin: 0;
+}
+
+.producto>div>img, .productoPrincipal>div>img {
+     display: block;
+     height: auto;
+     max-width: 3vw;
+     object-fit: contain;
+     padding-left: .5em;
+}
+
+.tituloProducto {
+     font-family: HelveticaNeueBold;
+}
+
+.precio {
+     font-family: HelveticaNeueBold;
+}
+
+#serum {
+     background-color: #FFFFFF;
+}
+
+#serum>h1 {
+     margin: 0;
+     font-family: HelveticaNeueBold;
+     font-size: 2.7em;
+     text-align: justify;
+}
+
+#serum>img {
+     height: 15em;
+     transform: translate(3em, -14em) rotate(65deg);
+     margin-bottom:-20em;
+     overflow: hidden;
+}
+
+#serum>div {
+     display: flex;
+     justify-content: space-between;
+}
+
+#serum>div>.descripcion {
+     width: 55vw;
+     font-size: .75em;
+     padding-left: 1em;
+     margin-top: -1em;
+}
+
+#serum>div>div {
+     width: 40vw;
+     padding-right: 1.5em;
+     display: flex;
+     flex-direction: column;
+     justify-content: end;
+     
+}
+
+#serum>div>div>.precio {
+     text-align: right;
+     margin: 0;
+     font-size: 1.5em;
+     padding-bottom: .6em;
+     z-index: 1;
+}
+
+#serum>div>div>.botonRedondo {
+     display: none;
+}
+
+#bestsellers {
+     display: flex;
+     justify-content: space-between;
+     background-color: #FFFFFF;
+}
+
+#bestsellers>.columnOuter {
+     background-color: #000000;
+     width: 10vw;
+     position: relative;
+}
+
+#bestsellers>.columnOuter>.columnInner {
+     position: absolute;
+     top: 50%;
+     left: 50%;
+     transform: translateX(-50%) translateY(-50%) rotate(90deg);
+}
+
+#bestsellers>.columnOuter>.columnInner>h1 {
+     color: #FFFFFF;
+     margin: 0;
+     white-space: nowrap;
+     font-family: HelveticaNeueBold;
+     letter-spacing: .5em;
+}
+
+#galeriaBestseller {
+     display: flex;
+     justify-content: space-around;
+     flex-grow: 1;
+     max-width: 80vw;
+     flex-wrap: wrap;
+}
+
+#galeriaBestseller>.producto {
+     display: flex;
+     flex-direction: column;
+     width: 30vw;
+     padding-bottom: 1em;
+}
+
+#galeriaBestseller>.producto>img {
+     display: block;
+     width: auto;
+     height: 30vh;
+     width: 30vw;
+     object-fit: contain;
+}
+
+#galeriaBestseller.producto>div {
+     display: flex;
+     flex-direction: row;
+     justify-content: space-between;
+}
+
+#galeriaBestseller.producto>div>p {
+     flex-grow: 1;
+}
+
+#galeriaBestseller.producto>div>* {
+     margin: 0;
+}
+
+#galeriaBestseller.producto>div>img {
+     display: block;
+     height: auto;
+     max-width: 3vw;
+     object-fit: contain;
+     padding-left: .5em;
+}
+
+#skincare {
+     background-color: #FFFFFF;
+}
+
+#skincare>h1 {
+     background-color: #53CE06;
+     margin: 0;
+     font-family: HelveticaNeueBold;
+     font-size: 1.5em;
+     padding: .5em .5em .5em .5em;
+     margin-bottom: 1em;
+}
+
+#galeriaSkincare {
+     display: flex;
+     background-color: #FFFFFF;
+     height: 36vh;
+     width: 100vw;
+     justify-content: space-evenly;
+}
+
+#galeriaSkincare>.producto {
+     width: 20vw;
+}
+
+#galeriaSkincare>.producto>*, #galeriaSkincare>.producto>*>* {
+     margin: 0;
+}
+
+hr {
+     margin: 0;
+}
+
+
+@media (min-width: 576px) { 
+
+     }
+
+
+@media (min-width: 768px) {
+     #serum>h1 {
+          font-size: 8.1vw;
+     }
+     
+     #serum>img {
+          height: 25em;
+          transform: translate(25vw, -37em) rotate(20deg);
+          margin-bottom: -50em;
+     }
+     
+     #serum>div>.descripcion {
+          width: 20vw;
+          font-size: 1em;
+          padding-left: 3em;
+     }
+
+     #serum>div>div>.precio {
+          font-size: 2.5em;
+          padding-bottom: 0;
+     }
+     
+     #serum>div>div>.botonRedondo {
+          display: flex;
+          align-self: right;
+          margin-left: auto;
+          font-size: 1.5em;
+          margin-bottom: 1em;
+      }
+}
+
+
+@media (min-width: 992px) { 
+     #faceMask {
+          background-size: 115vw;
+          background-position: -225px -40vh;
+     }
+     
+     #faceText {
+          font-size: 1.8em;
+          width: 23vw;
+          padding: 40vh 0 0 2em;
+     }
+     
+     #faceText>p {
+          font-size: .7em;
+     }
+     
+     #galeriaProductos {
+          margin: 1em;
+          width: 200px;
+          display: flex;
+          position: absolute;
+          top: 7em;
+          right: 0vw;
+          width: 50vw;
+          height: 60vh;
+          margin: 0;
+          flex-direction: row;
+          flex-wrap: wrap;
+          justify-content: right;
+     }
+     
+     #galeriaProductos> .producto, .producto, .productoPrincipal {
+          display: flex;
+          flex-direction: column;
+          width: 12vw;
+          height: 20vh;
+          padding: 2em 5em 0 0;
+     }
+
+     .producto>img, .productoPrincipal>img {
+          max-height: 20vh;
+          max-width: 25vw;
+          align-self: center;
+     }
+
+     .producto>div>img, .productoPrincipal>div>img {
+          display: block;
+          height: auto;
+          max-width: 1.5vh;
+          object-fit: contain;
+          padding-left: .5em;
+     }
+     
+     .botonRedondo {
+          width: 15vw;
+     }
+
+     #galeriaBestseller>.producto>.botonRedondo {
+          width: 15vw;
+     }
+
+     #serum>h1 {
+          font-size: 8.1vw;
+     }
+     
+     #serum>img {
+          height: 40em;
+          transform: translate(30vw, -35em) rotate(20deg);
+          margin-bottom: -50em;
+     }
+     
+     #serum>div>.descripcion {
+          width: 17vw;
+          font-size: 1.5em;
+          padding-left: 3em;
+     }
+
+     #serum>div>div>.precio {
+          font-size: 3em;
+          padding-bottom: 0;
+     }
+     
+     #serum>div>div>.botonRedondo {
+          display: flex;
+          align-self: right;
+          margin-left: auto;
+          font-size: 1.5em;
+          margin-bottom: 1em;
+     }
+
+     #bestsellers>.columnOuter {
+          width: 3vw;
+     }
+
+     #galeriaBestseller {
+          max-width: 95vw;
+     }
+     
+     #galeriaBestseller>.producto {
+          width: 20vw;
+          height: 45vh;
+     }
+
+     #skincare>h1 {
+          font-size: 2em;
+          padding: .3em .3em .3em .6em;
+     }
+     
+     #galeriaSkincare {
+          height: 30vh;
+     }
+     
+     #galeriaSkincare>.producto {
+          width: 25vw;
+          padding: 0 3em 0 3em;
+     }
+     
+     #galeriaSkincare>.producto>*, #galeriaSkincare>.producto>*>* {
+          margin: 0;
+     }
+}
