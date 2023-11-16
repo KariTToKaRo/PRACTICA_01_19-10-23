@@ -12,9 +12,6 @@ html {
      overflow-x: hidden;
 }
 
-body {
-     background-color: lightgray;
-}
 
 .container{
     color: aquamarine;
@@ -331,6 +328,7 @@ hr {
 
 @media (min-width: 992px) { 
      .faceMask {
+          background-size: 200vh;
           background-position: -115px -10vh;
      }
      
