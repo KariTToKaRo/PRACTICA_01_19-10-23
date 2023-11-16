@@ -1,20 +1,11 @@
-/* botones de mas info*/
+document.querySelectorAll('.toggle-button').forEach(function(toggleButton) {
+  var button = toggleButton.querySelector('button');
+  var collapse = new bootstrap.Collapse(button.nextElementSibling.nextElementSibling);
 
-function toggleContent() {
-    var toggleBtn = document.getElementById("toggleBtn");
-    var hiddenContent = document.getElementById("hiddenContent");
-
-    if (toggleBtn.innerHTML === '+') {
-      toggleBtn.innerHTML = '-';
-      hiddenContent.style.display = "block";
-    } else {
-      toggleBtn.innerHTML = '+';
-      hiddenContent.style.display = "none";
-    }
-  }
-
-
-/*Carrusel you may also like*/
+  button.addEventListener('click', function() {
+    button.textContent = collapse._isShown ? '-' : '+';
+  });
+});
 
 const galeriaRecomendados = document.querySelector('.galeriaRecomendados');
 
@@ -24,3 +15,4 @@ function desplazarCarrusel(direccion) {
 
   galeriaRecomendados.style.transform = `translateX(${desplazamiento}px)`;
 }
+
