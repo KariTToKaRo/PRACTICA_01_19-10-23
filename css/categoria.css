@@ -13,6 +13,11 @@
      src: url("../fonts/BodoniModa.ttf");
 }
 
+html {
+     overflow-x: hidden;
+}
+
+
 body {
      background-color: lightgray;
 }

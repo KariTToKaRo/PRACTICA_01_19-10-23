@@ -15,6 +15,12 @@
     font-family: HelveticaNeueRegular;
 }
 
+
+html {
+  overflow-x: hidden;
+}
+
+
 /*PRODUCTO*/
 #productoInfo{
     padding:0;
