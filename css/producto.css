@@ -7,6 +7,10 @@
     font-family: 'HelveticaNeueRegular';
     src: url("../fonts/HelveticaNeueRegular.ttf");
 }
+@font-face {
+  font-family: 'BodoniModa';
+  src: url("../fonts/BodoniModa.ttf");
+}
 * {
     font-family: HelveticaNeueRegular;
 }
@@ -27,7 +31,9 @@ figure{
     color:black;
 }
 
-
+.producto{
+  position: sticky;
+}
 .fotopr > img{
     max-width: 28em;
     justify-content: center;
@@ -51,10 +57,12 @@ figure{
     
     color: black;
     float: right;
-    max-width: 40%;
+   
     float: right;
 }
-
+.nombrepr > h1{
+  font-family: 'BodoniModa';
+}
 .botones{
     display: flex;
     justify-content:space-between; 
@@ -182,7 +190,8 @@ figure{
   display: flex;
   flex-direction: column;
  }
- .align-items-start{
-  width: 100%;
+
+ .izquierda{
+ max-width: max-content;
  }
 }

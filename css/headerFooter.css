@@ -34,7 +34,7 @@ header {
 #animationScroll {
      display: inline-block;
      background-color: #1E1E1E;
-     width: 100vw;
+     width: 100%;
      margin-top: 0px;
      margin-bottom: 0px;
      
@@ -269,7 +269,7 @@ footer {
 
      #footerLogo {
           flex-grow: 1;
-          max-width: 15%;
+          max-width: 100%;
           order: -1;
      }
      
