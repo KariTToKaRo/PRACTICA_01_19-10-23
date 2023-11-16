@@ -232,6 +232,17 @@ footer {
      header {
           height: 8em;
      }
+
+     #animationScroll>p {
+          animation: scrollAnim 11s linear infinite;
+     }
+
+     @keyframes scrollAnim {
+          0% {transform: translate(0, 0);}
+          100% {transform: translate(-110%, 0);}
+          
+     }
+
      .splitHeader {
           width: 0%;
           height: .5em;
