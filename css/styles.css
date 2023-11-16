@@ -437,7 +437,7 @@ justify-items: center;
 
 
 
-     footer {
+     #footer {
           max-width: 100%;
           overflow: hidden;
      }
@@ -482,6 +482,7 @@ justify-items: center;
 .izquierda {
      position: -webkit-sticky;
      position: sticky;
+     top:0;
      bottom: 5em;/* Ajusta la distancia desde la parte superior según tus preferencias */
      padding: 2em;
  }
@@ -512,6 +513,8 @@ figure{
 
 .nombrepr{
      color: black;
+     float: right;
+     max-width: 40%;
 }
 
 .botones{
@@ -542,14 +545,90 @@ figure{
      color:black;
 }
 
+/*botones de ver mas*/
+.toggle-button {
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     opacity: 100;
+     height: 10%;
+     flex-direction: row-reverse;
+   }
 
-#galeriaRelacionados{
-     padding: 3em;
+   .hidden {
+     display: none;
+   }
+
+#toggleBtn{
+     background-color: transparent;
+    
+     width: 30px;
 }
 
 
 
 
+#GaleriaProductosRelacionados {
+     text-align: center;
+     margin-top: 2em;
+     font-weight: bolder;
+   }
 
+   .container-fluid {
+     display: flex;
+     overflow: hidden;
+   }
+
+   .categoria {
+     display: flex;
+   }
+
+   .galeriaRecomendados {
+     display: flex;
+     transition: transform 0.5s ease;
+   }
+
+   .producto_recomendados_relacionados1 {
+     width: 15em;
+     padding: 1em;
+     display: flex;
+     flex-direction: column;
+   }
+
+   .rounded-button {
+     display: inline-block;
+     padding: 15px 20px;
+     border-radius: 20px;
+     background-color: #ffffff;
+     color: #000000;
+     text-align: center;
+     text-decoration: none;
+     font-size: 16px;
+     cursor: pointer;
+     overflow: hidden;
+     position: relative;
+   }
+
+/*RESPONSIVE MOVIL PRODUCTO*/
+@media (max-width: 576px) { 
+     .nombrepr{
+          align-items: flex-start;
+          float: left;
+          margin: 1em;
+          padding: 2em;
+          max-width: 100%;
+  }
+    .align-items-start{
+     display: flex;
+     flex-direction: column;
+    } 
+.izquierda{
+     position: relative;
+}
+.galeriaProducto{
+     display: flex;
+     flex-direction: row;
+}
+}
 /*CATEGORIA*/
 
